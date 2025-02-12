@@ -1,0 +1,57 @@
+<html>
+<head>
+    </head>
+    <body>
+        <h1>4.5 Assignment</h1>
+
+        <p id="concatenation"></p>
+        <p id="if"></p>
+        <p id="switch"></p>    
+        <p id="string"></p>
+        <p id="numbers"></p>
+
+    <script>
+        let text1 = "Play";
+        let text2 = "Station";
+        let result = text1.concat(text2);
+
+        document.getElementById("concatenation").innerHTML = result;
+    </script>   
+
+    <script>
+        if (new Date().getHours() < 18) {
+        document.getElementById("if").innerHTML = "What a Wonderful Day it is!";
+        }
+    </script>
+
+    <script>
+        let it;
+        switch (new Date().getDay()) {
+        case 6:
+            it = "Today is Saturday";
+            break;
+        case 0:
+            it = "Today is Sunday";
+            break;
+        default:
+            it = "I wonder when the World Cup is?";
+        }
+        document.getElementById("switch").innerHTML = it;
+    </script>
+
+    <script>
+        let text = "Who just performed at the Super Bowl?";
+        document.getElementById("string").innerHTML = text.length;
+    </script>
+    
+    <script>
+       let x = 500;
+       document.getElementById("numbers").innerHTML = x.toString() + "<br>" + (500).toString() + "<br>" + (300 + 200).toString();
+    </script>
+
+   
+
+    
+    
+</body>
+</html>
